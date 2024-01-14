@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "TTLakes";
+    color: #1B1C21;
+    font-weight: bold;
+
+}
+ul {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url(./TTLakes/TTLakes-Regular.eot) format("eot"),
+    url(./TTLakes/TTLakes-Regular.ttf) format("ttf"),
+    url(./TTLakes/TTLakes-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "TTLakes Bold";
+    src: url(./TTLakes/TTLakes-Bold.eot) format("eot"),
+    url(./TTLakes/TTLakes-Bold.ttf) format("ttf"),
+    url(./TTLakes/TTLakes-Bold.woff) format("woff");
+}
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 16px 0px 52px 0px #0E185033, -2px 0px 4px 0px #454F7E05;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+.icons_image {
+    height: 40px;
+    width: 40px;
+}
+
+/*анимация*/
+.icons,
+.left-sidebar_menu__href,
+.lang__item {
+    transition: opacity 0.3s ease;
+}
+.icons:hover,
+.left-sidebar_menu__href:hover,
+.lang__item:hover {
+    opacity: 0.8;
+}
+
+/*шапка*/
+.left-sidebar__head {
+    display: flex;
+    padding: 16px 24px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    align-self: center;
+    left: 25%;
+}
+
+.search-icon {
+    margin-left: auto;
+}
+
+/*меню*/
+.left-sidebar__main {
+    flex: 1 1 auto;
+    
+}
+.left-sidebar_menu {
+    padding: 16px 24px;
+}
+
+.left-sidebar_menu__item {
+    padding: 16px 0;
+    position: relative;
+}
+
+.left-sidebar_menu__href {    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.left-sidebar_menu__item:first-child > a:hover{
+    opacity: 100;
+}
+
+.left-sidebar_menu__item:first-child > a{
+    color: #7E7E82;
+}
+/*зеленая линия*/
+.left-sidebar_menu__item:first-child>a::before {
+    content: "";
+    display: block;
+    position:absolute;
+    border-right: 4px solid #41F6D7;
+    height: 50%;
+    left: -24px;
+    width: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+/*footer*/
+.left-sidebar__footer {
+    padding: 32px 24px;
+}
+
+.contact-icons .icons {
+    margin-right: 16px;
+}
+
+.contact-numbers p {
+    margin: 12px 0;
+}
+
+.contact-numbers__email {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+}
+.contact-numbers__number {
+    font-family: "TTLakes Bold";
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+}
+
+.lang {
+    padding-top: 34px;
+}
+
+.lang button {
+    margin-right: 10px;
+}
+
+.lang__item:first-child {
+    color: #7E7E82;
+}
+
+.lang__item:first-child:hover {
+    opacity: 100;
+}
